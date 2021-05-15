@@ -1,0 +1,17 @@
+.footer {
+    font-family: GothamMedium;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #EEEEEE;
+    padding: 0 15vw;
+    &-text {
+        text-align: center;
+        margin: 10px auto;
+    }
+}
+
+.bold {
+    font-family: GothamBold;
+}
