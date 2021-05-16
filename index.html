@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/01a3cc58f7.js" crossorigin="anonymous"></script>
     <title>Prueba Tambourine</title>
 </head>
 <body>
@@ -61,8 +62,51 @@
         </section>
     </main>
     <footer class="footer">
-        <p class="footer-text">390 Congress St. (at Congress & Exchange Streets), Portland, Maine <span class="bold">&nbsp &#183 &nbsp MAP ></span></p>
-        <p class="footer-text">(207) 663.9990 <span class="bold">&nbsp &#183 &nbsp </span>info@portlandpresshotel.com</p>
+        <p class="footer-text">390 Congress St. (at Congress & Exchange Streets), Portland, Maine <span class="bold">&nbsp&#183&nbsp MAP ></span></p>
+        <p class="footer-text">(207) 663.9990 <span class="bold">&nbsp&#183&nbsp</span> info@portlandpresshotel.com</p>
     </footer>
+    <div class="form-container">
+        <input type="checkbox" id="form">
+        <label class="form-container__title" for="form">BOOK NOW</label>
+        <form class="form" action="">
+            <img class="close-button" src="https://img-premium.flaticon.com/png/512/1828/1828666.png?token=exp=1621143562~hmac=24d99af5e4e5f97b87ac1e61aafd0211" alt="close button">
+            <h2 class="form-title">BOOK NOW</h2>
+            <label for="arrival" class="form-subtitle">ARRIVAL DATE</label>
+            <input type="date" name="arrival" id="arrival">
+            <label for="departure" class="form-subtitle">DEPARTURE DATE</label>
+            <input type="date" name="departure" id="departure">
+            <p class="form-subtitle">GUESTS</p>
+            <div class="guest-container">
+                <select name="adults">
+                    <option value="1">1 Adult</option>
+                    <option value="2">2 Adults</option>
+                    <option value="3">3 Adults</option>
+                    <option value="4">4 Adults</option>
+                    <option value="5">5 Adults</option>
+                    <option value="6">6 Adults</option>
+                    <option value="7">7 Adults</option>
+                    <option value="8">8 Adults</option>
+                    <option value="9">9 Adults</option>
+                    <option value="10">10 Adults</option>
+                </select>
+                <select name="childs">
+                    <option value="1">1 Child</option>
+                    <option value="2">2 Childs</option>
+                    <option value="3">3 Childs</option>
+                    <option value="4">4 Childs</option>
+                    <option value="5">5 Childs</option>
+                    <option value="6">6 Childs</option>
+                    <option value="7">7 Childs</option>
+                    <option value="8">8 Childs</option>
+                    <option value="9">9 Childs</option>
+                    <option value="10">10 Childs</option>
+                </select>
+            </div>
+            <p class="cta">GET READY! You are about to get our best price. Guaranteed.</p>
+            <div class="button">LET'S GO</div>
+            <p class="cta">OR, BOOK YOUR GROUP &nbsp;<i class="fas fa-arrow-right"></i></p>
+        </form>
+    </div>
+    <script src="./main.js"></script>
 </body>
 </html>
