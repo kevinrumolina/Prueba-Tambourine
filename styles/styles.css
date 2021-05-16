@@ -70,6 +70,9 @@
   top: 0;
   left: 25%;
 }
+.header .intro__title, .header .intro__subtitle {
+  padding: 0 15px;
+}
 .header .intro__title {
   font-family: Bodoni;
   font-size: 2rem;
