@@ -66,6 +66,22 @@
   top: 95px;
   left: -15px;
 }
+.header .arrow {
+  width: 20px;
+  height: 20px;
+  border-left: 3px solid #EEEEEE;
+  border-bottom: 3px solid #EEEEEE;
+  position: absolute;
+  top: 350px;
+}
+.header .arrow.prev {
+  left: 50px;
+  transform: rotate(45deg);
+}
+.header .arrow.next {
+  right: 50px;
+  transform: rotate(-135deg);
+}
 .header .intro {
   position: relative;
   width: 100vw;

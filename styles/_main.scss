@@ -39,6 +39,22 @@
             left: -15px;
         }
     }
+    .arrow {
+        width: 20px;
+        height: 20px;
+        border-left: 3px solid $light-gray;
+        border-bottom: 3px solid $light-gray;
+        position: absolute;
+        top: 350px;
+    }
+    .arrow.prev {
+        left: 50px;
+        transform: rotate(45deg);
+    }
+    .arrow.next {
+        right: 50px;
+        transform: rotate(-135deg);
+    }
     .intro {
         position: relative;
         width: 100vw;
