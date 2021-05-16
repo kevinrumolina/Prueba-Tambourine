@@ -25,6 +25,73 @@
   font-family: GothamBook;
 }
 
+.header {
+  position: relative;
+  width: 100vw;
+  background-image: url("../assets/images/slide1.jpg");
+  background-size: 200vw;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top: 95px;
+}
+.header .logo-container {
+  width: 100vw;
+  height: 100px;
+  line-height: 100px;
+  font-size: 0.8rem;
+  background-color: #EEEEEE;
+  opacity: 0.9;
+  padding: 0 60px;
+  margin-bottom: 220px;
+}
+.header .logo-container .image-container {
+  position: absolute;
+  width: 100vw;
+  text-align: right;
+  top: 95px;
+  left: -15px;
+}
+.header .intro {
+  position: relative;
+  width: 100vw;
+  background-color: black;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 45px;
+  z-index: 2;
+}
+.header .intro::before {
+  content: " ";
+  width: 50%;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 25%;
+}
+.header .intro__title {
+  font-family: Bodoni;
+  font-size: 2rem;
+}
+.header .intro__subtitle {
+  font-family: Bodoni;
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+}
+.header .intro__description {
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+  padding: 0 10vw 100px;
+}
+.header .black-div {
+  position: absolute;
+  width: 100vw;
+  height: 212px;
+  bottom: 0;
+  background-color: #000000;
+  z-index: 1;
+}
+
 .stay {
   display: flex;
   flex-direction: column-reverse;
@@ -140,11 +207,43 @@
 }
 
 @media screen and (min-width: 426px) {
+  .header .logo-container .image-container {
+    top: 45px;
+  }
+  .header .logo-container .image-container img {
+    width: 200px;
+  }
+
   .stay-image {
     width: 90vw;
   }
 }
+@media screen and (min-width: 769px) {
+  .header {
+    background-size: cover;
+    background-position: center;
+  }
+  .header .logo-container .image-container {
+    text-align: center;
+    left: 0;
+  }
+  .header .logo-container .image-container img {
+    width: 200px;
+  }
+}
 @media screen and (min-width: 1024px) {
+  .header .logo-container {
+    width: 1024px;
+    margin: 0 auto 420px;
+  }
+  .header .intro {
+    width: 1024px;
+    margin: 0 auto;
+  }
+  .header .intro__description {
+    padding: 0 145px 100px;
+  }
+
   .stay {
     flex-direction: row;
     justify-content: center;
@@ -174,6 +273,10 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .header .logo-container, .header .intro {
+    width: 1080px;
+  }
+
   .stay-image {
     width: 620px;
   }

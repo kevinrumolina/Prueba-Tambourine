@@ -1,4 +1,33 @@
+@media screen and (min-width: 769px) {
+    .header {
+        background-size: cover;
+        background-position: center;
+        .logo-container {
+            .image-container {
+                text-align: center;
+                left: 0;
+                img {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 1024px) {
+    .header {
+        .logo-container {
+            width: 1024px;
+            margin: 0 auto 420px;
+        }
+        .intro {
+            width: 1024px;
+            margin: 0 auto;
+            &__description {
+                padding: 0 145px 100px;
+            }
+        }
+    }
     .stay {
         flex-direction: row;
         justify-content: center;
@@ -29,6 +58,11 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .header {
+        .logo-container, .intro {
+            width: 1080px;
+        }
+    }
     .stay {
         &-image {
             width: 620px;
