@@ -22,7 +22,38 @@
 
 :root {
   font-size: 16px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: GothamBook;
+}
+
+.stay {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  background-color: #EEEEEE;
+  padding: 70px 15px;
+  width: 100vw;
+}
+.stay-title, .stay-image, .stay-container__hotel {
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+.stay-image {
+  width: 100vw;
+}
+.stay-container__hotel {
+  font-family: GothamBold;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #979FA4;
+}
+.stay-container__description {
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+  margin-bottom: 70px;
+}
+.stay-title {
+  color: #353535;
 }
 
 .events {
@@ -32,7 +63,6 @@
   margin-bottom: 55px;
 }
 .events .events-title {
-  font-family: GothamBook;
   font-size: 1rem;
   text-align: center;
   color: #666666;
@@ -96,8 +126,60 @@
   margin: 10px auto;
 }
 
+.button {
+  display: inline-block;
+  font-family: GothamBold;
+  color: #E21F25;
+  border: 1px solid #E21F25;
+  border-radius: 1px;
+  padding: 10px;
+}
+
 .bold {
   font-family: GothamBold;
+}
+
+@media screen and (min-width: 426px) {
+  .stay-image {
+    width: 90vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .stay {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+  .stay-image {
+    width: 540px;
+    margin-bottom: 0;
+  }
+  .stay-container {
+    width: 425px;
+    padding-right: 65px;
+  }
+  .stay-container::before {
+    content: "ACCOMMODATIONS";
+    display: block;
+    width: 400px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #353535;
+  }
+  .stay-title {
+    display: none;
+  }
+  .stay .button {
+    margin-left: 132px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .stay-image {
+    width: 620px;
+  }
+  .stay-container {
+    width: 465px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
