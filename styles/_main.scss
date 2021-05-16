@@ -2,10 +2,11 @@
     position: relative;
     width: 100vw;
     background-image: url('../assets/images/slide1.jpg');
-    background-size: 200vw;
+    background-size: 250vw;
     background-position: top;
     background-repeat: no-repeat;
     padding-top: 95px;
+    transition: all 1s linear;
     .logo-container {
         width: 100vw;
         height: 100px;
@@ -39,6 +40,9 @@
             position: absolute;
             top: 0;
             left: 25%;
+        }
+        &__title, &__subtitle {
+            padding: 0 15px;
         }
         &__title {
             font-family: Bodoni;

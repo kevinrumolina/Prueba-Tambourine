@@ -29,10 +29,11 @@
   position: relative;
   width: 100vw;
   background-image: url("../assets/images/slide1.jpg");
-  background-size: 200vw;
+  background-size: 250vw;
   background-position: top;
   background-repeat: no-repeat;
   padding-top: 95px;
+  transition: all 1s linear;
 }
 .header .logo-container {
   width: 100vw;
