@@ -273,6 +273,7 @@
 }
 .form-container .form .button {
   margin-left: 60px;
+  background-color: transparent;
 }
 
 .button {

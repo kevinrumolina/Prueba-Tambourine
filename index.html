@@ -61,10 +61,6 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <p class="footer-text">390 Congress St. (at Congress & Exchange Streets), Portland, Maine <span class="bold">&nbsp&#183&nbsp MAP ></span></p>
-        <p class="footer-text">(207) 663.9990 <span class="bold">&nbsp&#183&nbsp</span> info@portlandpresshotel.com</p>
-    </footer>
     <div class="form-container">
         <input type="checkbox" id="form">
         <label class="form-container__title" for="form">BOOK NOW</label>
@@ -72,12 +68,13 @@
             <img class="close-button" src="https://img-premium.flaticon.com/png/512/1828/1828666.png?token=exp=1621143562~hmac=24d99af5e4e5f97b87ac1e61aafd0211" alt="close button">
             <h2 class="form-title">BOOK NOW</h2>
             <label for="arrival" class="form-subtitle">ARRIVAL DATE</label>
-            <input type="date" name="arrival" id="arrival">
+            <input type="date" name="arrival" id="arrival" required>
             <label for="departure" class="form-subtitle">DEPARTURE DATE</label>
-            <input type="date" name="departure" id="departure">
+            <input type="date" name="departure" id="departure" required>
             <p class="form-subtitle">GUESTS</p>
             <div class="guest-container">
-                <select name="adults">
+                <select name="adults" required>
+                    <option value="">Adults</option>
                     <option value="1">1 Adult</option>
                     <option value="2">2 Adults</option>
                     <option value="3">3 Adults</option>
@@ -89,7 +86,8 @@
                     <option value="9">9 Adults</option>
                     <option value="10">10 Adults</option>
                 </select>
-                <select name="childs">
+                <select name="childs" required>
+                    <option value="">Childs</option>
                     <option value="1">1 Child</option>
                     <option value="2">2 Childs</option>
                     <option value="3">3 Childs</option>
@@ -103,10 +101,14 @@
                 </select>
             </div>
             <p class="cta">GET READY! You are about to get our best price. Guaranteed.</p>
-            <div class="button">LET'S GO</div>
+            <button type="submit" class="button" placeholder="LET'S GO">LET'S GO</button>
             <p class="cta">OR, BOOK YOUR GROUP &nbsp;<i class="fas fa-arrow-right"></i></p>
         </form>
     </div>
+    <footer class="footer">
+        <p class="footer-text">390 Congress St. (at Congress & Exchange Streets), Portland, Maine <span class="bold">&nbsp;&#183;&nbsp; MAP ></span></p>
+        <p class="footer-text">(207) 663.9990 <span class="bold">&nbsp;&#183;&nbsp;</span> info@portlandpresshotel.com</p>
+    </footer>
     <script src="./main.js"></script>
 </body>
 </html>
