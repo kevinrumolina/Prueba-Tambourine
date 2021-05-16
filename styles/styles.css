@@ -198,8 +198,8 @@
   position: fixed;
   z-index: 3;
   top: 95px;
-  left: 0;
-  transform: translate(calc(100vw - 118px));
+  right: 0;
+  transform: translate(320px);
 }
 .form-container input[type=checkbox] {
   display: none;
@@ -221,10 +221,10 @@
   transition: all 1s ease;
 }
 #form:checked ~ .form-container__title {
-  transform: translateX(calc(-320px)) rotate(270deg);
+  transform: translateX(-320px) rotate(270deg);
 }
 .form-container #form:checked ~ .form {
-  transform: translateX(calc(-320px));
+  transform: translateX(-320px);
 }
 .form-container .form {
   position: relative;
@@ -235,7 +235,8 @@
 }
 .form-container .form .close-button {
   position: absolute;
-  width: 15px;
+  font-size: 1rem;
+  color: #E21F25;
   top: 25px;
   left: 20px;
 }

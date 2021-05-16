@@ -173,8 +173,8 @@
     position: fixed;
     z-index: 3;
     top: 95px;
-    left: 0;
-    transform: translate(calc(100vw - 118px));
+    right: 0;
+    transform: translate(320px);
     input[type="checkbox"] {
         display: none;
     }
@@ -193,10 +193,10 @@
     }
     &__title, .form { transition: all 1s ease; }
     #form:checked ~ &__title{
-        transform: translateX(calc(-320px)) rotate(270deg);
+        transform: translateX(-320px) rotate(270deg);
     }
     #form:checked ~ .form{
-        transform: translateX(calc(-320px));
+        transform: translateX(-320px);
     }
     .form {
         position: relative;
@@ -206,7 +206,8 @@
         padding: 75px 55px 30px;
         .close-button {
             position: absolute;
-            width: 15px;
+            font-size: 1.5rem;
+            color: $button;
             top: 25px;
             left: 20px;
         }
