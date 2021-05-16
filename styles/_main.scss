@@ -1,3 +1,18 @@
+@keyframes slider {
+    0% {
+        background-image: url('../assets/images/slide1.jpg');
+    }
+    25% {
+        background-image: url('../assets/images/slide2.jpg');
+    }
+    50% {
+        background-image: url('../assets/images/slide3.jpg');
+    }
+    75% {
+        background-image: url('../assets/images/slide4.jpg');
+    }
+}
+
 .header {
     position: relative;
     width: 100vw;
@@ -6,7 +21,7 @@
     background-position: top;
     background-repeat: no-repeat;
     padding-top: 95px;
-    transition: all 1s linear;
+    animation: slider 32s infinite;
     .logo-container {
         width: 100vw;
         height: 100px;
