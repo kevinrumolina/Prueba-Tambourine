@@ -25,20 +25,6 @@
   font-family: GothamBook;
 }
 
-@keyframes slider {
-  0% {
-    background-image: url("../assets/images/slide1.jpg");
-  }
-  25% {
-    background-image: url("../assets/images/slide2.jpg");
-  }
-  50% {
-    background-image: url("../assets/images/slide3.jpg");
-  }
-  75% {
-    background-image: url("../assets/images/slide4.jpg");
-  }
-}
 .header {
   position: relative;
   width: 100vw;
@@ -77,7 +63,7 @@
   cursor: pointer;
 }
 .header .arrow.prev {
-  left: 125px;
+  left: 25px;
   transform: rotate(45deg);
 }
 .header .arrow.next {
@@ -232,7 +218,7 @@
 .form-container {
   display: flex;
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   top: 65px;
   right: 0;
   transform: translate(320px);
@@ -244,6 +230,7 @@
   position: relative;
   top: 175px;
   left: 45px;
+  z-index: 1;
   font-family: GothamBold;
   font-size: 1rem;
   width: 120px;
@@ -261,6 +248,19 @@
 }
 .form-container #form:checked ~ .form {
   transform: translateX(-320px);
+}
+.form-container #form:checked ~ .dark-background {
+  visibility: visible;
+}
+.form-container .dark-background {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: -95px;
+  left: calc(-100vw + 120px);
+  z-index: 0;
+  visibility: hidden;
 }
 .form-container .form {
   position: relative;
@@ -371,6 +371,10 @@
   }
   .header .logo-container .image-container img {
     width: 200px;
+  }
+  .header .arrow.prev {
+    left: 125px;
+    transform: rotate(45deg);
   }
 }
 @media screen and (min-width: 1024px) {
