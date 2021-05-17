@@ -21,7 +21,7 @@
     background-position: top;
     background-repeat: no-repeat;
     padding-top: 95px;
-    animation: slider 32s infinite;
+    transition: all 1s linear;
     .logo-container {
         width: 100vw;
         height: 100px;
@@ -40,19 +40,21 @@
         }
     }
     .arrow {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
         border-left: 3px solid $light-gray;
         border-bottom: 3px solid $light-gray;
         position: absolute;
         top: 350px;
+        z-index: 3;
+        cursor: pointer;
     }
     .arrow.prev {
-        left: 50px;
+        left: 125px;
         transform: rotate(45deg);
     }
     .arrow.next {
-        right: 50px;
+        right: 125px;
         transform: rotate(-135deg);
     }
     .intro {

@@ -47,7 +47,7 @@
   background-position: top;
   background-repeat: no-repeat;
   padding-top: 95px;
-  animation: slider 32s infinite;
+  transition: all 1s linear;
 }
 .header .logo-container {
   width: 100vw;
@@ -67,19 +67,21 @@
   left: -15px;
 }
 .header .arrow {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-left: 3px solid #EEEEEE;
   border-bottom: 3px solid #EEEEEE;
   position: absolute;
   top: 350px;
+  z-index: 3;
+  cursor: pointer;
 }
 .header .arrow.prev {
-  left: 50px;
+  left: 125px;
   transform: rotate(45deg);
 }
 .header .arrow.next {
-  right: 50px;
+  right: 125px;
   transform: rotate(-135deg);
 }
 .header .intro {
